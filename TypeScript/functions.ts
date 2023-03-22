@@ -15,4 +15,10 @@ function add4(num1 : number,num2 : number,num3? : number){
     return num3 ? num1 + num2 + num3 : num1 + num2;
 }
 
-console.log(add4(20,20));
+// console.log(add4(20,20));
+
+const add5 = ((num1 : number,num2 : number,num3 = 10) =>{
+    return num1+num2+num3;
+})
+
+console.log(add5(10,10));
