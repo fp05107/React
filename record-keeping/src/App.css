@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  background-color: #102d6d;
+}
+.inputFields{
+  display: flex;
+  /* margin: 60%; */
+  justify-content: center;
+  align-items: center;
+  background-color: #8666d1;
+  border: 2px solid red;
+}
+
+.data{
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+  /* border: 2px solid greenyellow; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.data_val{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
