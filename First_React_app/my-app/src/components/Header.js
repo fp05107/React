@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Header() {
+
+const Header = () => {
   return (
-    <div>Header</div>
+    <>
+      <h2 className="heading">Record Keeping App</h2>
+    </>
   )
 }
 
