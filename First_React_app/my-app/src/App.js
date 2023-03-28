@@ -1,30 +1,28 @@
 import "./App.css";
 import { useState,useEffect } from "react";
+import Contact from "./components/Contact"
+import About from "./components/About"
+import Main from "./components/Main"
+import {
+  Link,
+  NavLink
+} from "react-router-dom";
+
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        `https://dummyjson.com/products?limit=100`
-      );
-      const jsonData = await response.json();
-      console.log(jsonData)
-      setData(jsonData.products);
+  
+  const navLinkStyles = ({isActive}) =>{
+    return{
+      textDecoration: isActive ? "none" : "underline",
+      color : isActive ? "red" : "white",
     };
-    fetchData();
-  }, []);
+  }
 
   return (
     <div className="App">
-      <h1>Todo List</h1>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.title}</li>
-          // <img src={item.thumbnail}></img>
-        ))}
-      </ul>
+      <NavLink style={navLinkStyles} to="/">Home</NavLink>
+      <NavLink style={navLinkStyles} to="/about">About</NavLink>
+      <NavLink style={navLinkStyles} to="/contact">Contact</NavLink>
     </div>
   );
 }
@@ -62,5 +60,28 @@ movies.map((el,index) =>{
          year = {el.Year} />
 })
 } */
+
+
+// const [data, setData] = useState([]);
+
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       const response = await fetch(
+//         `https://dummyjson.com/products?limit=100`
+//       );
+//       const jsonData = await response.json();
+//       console.log(jsonData)
+//       setData(jsonData.products);
+//     };
+//     fetchData();
+//   }, []);
+
+{/* <h1>Todo List</h1>
+      <ul>
+        {data.map((item) => (
+          <li key={item.id}>{item.title}</li>
+          // <img src={item.thumbnail}></img>
+        ))}
+      </ul> */}
 
 export default App;
