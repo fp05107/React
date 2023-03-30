@@ -1,17 +1,46 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
+import Profile from "./components/Profile";
+
+function Button() {
+  return <button>Add</button>;
+}
 
 function App() {
-
-
-  return React.createElement("div",{className:"App"},[
-    React.createElement("h1",{},"Hello World"),
-    React.createElement("h2",{},"Welcome To React")
-  ])
+  const arr = [
+    {
+      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
+      name: "Subham",
+    },
+    {
+      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
+      name: "Subham",
+    },
+    {
+      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
+      name: "Subham",
+    },
+    {
+      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
+      name: "Subham",
+    },
+    {
+      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
+      name: "Subham",
+    },
+  ];
+  return (
+    <div>
+      {
+        arr.map((el) =>(
+          <Profile src = {el.src} name = {el.name}/>
+        ))
+      }
+    </div>
+  );
 }
 
 export default App;
-
 
 // export {AppState}
 // const [data,setData] = useState("Subham");
