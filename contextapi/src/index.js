@@ -4,8 +4,9 @@ import './index.css';
 // import App from './App';
 // import Todo from './components/Todo/Todo';
 // import Profile from './components/LikeApp/Profile';
-import Demo from './components/UseState/Demo';
+// import Demo from './components/UseState/Demo';
 import reportWebVitals from './reportWebVitals';
+import Demo3 from './components/UseState/Demo3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,7 @@ root.render(
     {/* <App /> */}
     {/* <Todo /> */}
     {/* <Profile /> */}
-    <Demo />
+    <Demo3 />
   </React.StrictMode>
 );
 

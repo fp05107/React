@@ -6,7 +6,6 @@ const Demo = () => {
     const countHandler = () =>{
         // setCount(count-1);
         setCount(count+1);
-        count++;
         setCount((count) => count+1);
         setCount((count) => count+1);
         setCount(count-1);
