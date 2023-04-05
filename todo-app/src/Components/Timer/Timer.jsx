@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import FormatTimeString from './FormatTimeString';
 
 const Timer = () => {
     const [timer,setTimer] = useState(0);
@@ -9,7 +10,7 @@ const Timer = () => {
         }
         ref.current = setInterval(() =>{
             setTimer((prevTime) => prevTime+1);
-        },1000)
+        },0)
     }
     const stopTimer = () =>{
         clearInterval(ref.current);
@@ -21,7 +22,7 @@ const Timer = () => {
     }
   return (
     <div>
-        <h1>Timer : {timer}</h1>
+        <h1>Timer : <FormatTimeString time={timer} /></h1>
         <button  onClick={startTimer}>START</button>
         <button onClick={stopTimer}>STOP</button>
         <button onClick={resetTimer}>RESET</button>
