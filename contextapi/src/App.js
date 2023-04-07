@@ -1,41 +1,15 @@
 import "./App.css";
 import React from "react";
-import Profile from "./components/Profile";
+import ResponsiveAppBar from "./components/ReactRouter/ResponsiveAppBar";
+import Home from "./components/ReactRouter/Home";
 
-function Button() {
-  return <button>Add</button>;
-}
 
 function App() {
-  const arr = [
-    {
-      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
-      name: "Subham",
-    },
-    {
-      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
-      name: "Subham",
-    },
-    {
-      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
-      name: "Subham",
-    },
-    {
-      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
-      name: "Subham",
-    },
-    {
-      src: "https://avatars.githubusercontent.com/u/105980734?v=4",
-      name: "Subham",
-    },
-  ];
+ 
   return (
     <div>
-      {
-        arr.map((el) =>(
-          <Profile src = {el.src} name = {el.name}/>
-        ))
-      }
+      <Home />
+      <ResponsiveAppBar />
     </div>
   );
 }

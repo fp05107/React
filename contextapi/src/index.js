@@ -1,23 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-// import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 // import Todo from './components/Todo/Todo';
 // import Profile from './components/LikeApp/Profile';
 // import Demo from './components/UseState/Demo';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 // import Demo3 from './components/UseState/Demo3';
-import Test2 from './components/JavaScript/Test2';
+// import Test2 from './components/JavaScript/Test2';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-    // {/* <App /> */}
-    // {/* <Todo /> */}
-    // {/* <Profile /> */}
-    // {/* <Demo3 /> */}
-    <Test2 />
-  // </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
