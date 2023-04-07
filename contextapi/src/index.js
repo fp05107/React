@@ -6,16 +6,18 @@ import './index.css';
 // import Profile from './components/LikeApp/Profile';
 // import Demo from './components/UseState/Demo';
 import reportWebVitals from './reportWebVitals';
-import Demo3 from './components/UseState/Demo3';
+// import Demo3 from './components/UseState/Demo3';
+import Test2 from './components/JavaScript/Test2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    {/* <Todo /> */}
-    {/* <Profile /> */}
-    <Demo3 />
-  </React.StrictMode>
+  // <React.StrictMode>
+    // {/* <App /> */}
+    // {/* <Todo /> */}
+    // {/* <Profile /> */}
+    // {/* <Demo3 /> */}
+    <Test2 />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
