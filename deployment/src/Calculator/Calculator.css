@@ -1,0 +1,10 @@
+.innerDivElement{
+    border: 1px solid teal;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+
+.innerDivElement:hover{
+    cursor: pointer;
+}
