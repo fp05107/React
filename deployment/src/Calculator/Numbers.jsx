@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Calculator.css";
+import { createContext } from 'react';
 
 const styles = {
     display:"flex",
@@ -12,9 +13,11 @@ const styles = {
     marginBottom:"10px"
 }
 
+
 const Numbers = () => {
 
     const [input,setInput] = useState('');
+    
     const handleClick = (value) =>{
         setInput(input+value);
         console.log("clicked")
