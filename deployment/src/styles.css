@@ -1,28 +1,57 @@
-.result {
-    height: 60px;
-    background-color: #bbb;
+button {
+    font-size: 1rem;
+    width: 30px;
+    border: 1px solid #d6d6d6;
+  }
+  
+  .App {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .display {
+    width: 40%;
+    height: 20px;
+    align-self: center;
+    background: lightgray;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .expression {
+    height: 30px;
+    color: rgb(170, 170, 170);
+  }
+  
+  .panel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .numbers {
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    width: 90px;
+  }
+  
+  .numbers button:last-child {
     width: 100%;
   }
   
-  .result p {
-    font-size: 40px;
-    margin: 5px;
-  
+  .operators {
+    display: flex;
+    flex-flow: column;
   }
   
-  .calculator-body {
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .button {
-    display: block;
-    background-color: #bbb;
-  }
-  
-  button {
-    width: 25%;
-    height: 60px;
-    font-size: 30px;
+  .operators button {
+    color: white;
+    background: #7f39ff;
+    border-left: none;
+    border-bottom: 0;
   }
   
