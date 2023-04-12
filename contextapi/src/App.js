@@ -1,15 +1,13 @@
 import "./App.css";
 import React from "react";
-import ResponsiveAppBar from "./components/ReactRouter/ResponsiveAppBar";
-import Home from "./components/ReactRouter/Home";
+
 
 
 function App() {
  
   return (
     <div>
-      <Home />
-      <ResponsiveAppBar />
+      
     </div>
   );
 }
