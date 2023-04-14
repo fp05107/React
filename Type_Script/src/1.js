@@ -1,0 +1,11 @@
+console.log("hello");
+var a;
+a = "subham";
+console.log(a);
+var b = true;
+var gender = "Male";
+gender = "Female";
+// gender = "a";
+var age = "23";
+var age2 = 1;
+console.log(age2);
