@@ -1,4 +1,3 @@
-"use strict";
 /**
  * This method return the element of the given index of the given array
  * @param arr

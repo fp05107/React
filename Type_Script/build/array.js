@@ -1,4 +1,3 @@
-"use strict";
 let arr1 = [1, 2, 3, 4];
 let arr2 = ["a", "b"];
 let arr3 = [1, 2, 3];
