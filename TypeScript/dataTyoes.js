@@ -21,4 +21,4 @@ var Color;
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
 let c = Color.Blue;
-// console.log(c);
+console.log(c);

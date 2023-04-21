@@ -1,13 +1,12 @@
 import './App.css';
-import MyTodo from './Components/MyTodo/MyTodo';
-import Form from './Components/MyTodo/Form';
+import Demo from './Components/ChakraUI/Demo';
 
 
 function App() {
   return (
     <div className="App">
       
-      <MyTodo />
+      <Demo />
 
     </div>
   );
