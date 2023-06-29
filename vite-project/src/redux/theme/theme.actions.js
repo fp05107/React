@@ -3,6 +3,4 @@ import {
   } from "./theme.types";
   
   
-  export const toggleTheme = () => {
-      type: TOGGLE_THEME
-  }
+  export const toggleTheme = () => ( {type: TOGGLE_THEME});

@@ -6,12 +6,12 @@ const initialState = {
   theme: "white",
 };
 
-export const themeReducer = (state = initialState, { type, payload }) => {
+export const themeReducer = (state = initialState, {type}) => {
   switch (type) {
     case TOGGLE_THEME: {
       return {
         ...state,
-        theme: state.theme === "white" ? "red" : "white",
+        theme: state.theme == "white" ? "black" : "white",
       };
     }
     default: {
