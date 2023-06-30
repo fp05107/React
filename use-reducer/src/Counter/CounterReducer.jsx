@@ -7,7 +7,8 @@ function CounterReducer(state,action){
         return state + action.payload;
     }
     else{
-        return state;
+        return state; 
     }
 }
+
 export default CounterReducer;

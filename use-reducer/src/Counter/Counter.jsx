@@ -6,6 +6,7 @@ import { IncByValAction } from "./CounterAction";
 const Counter = () => {
   const [state, dispatch] = useReducer(CounterReducer, 0);
   const [inputValue, setInputValue] = useState("");
+
   return (
     <div>
       <h2>Counter : {state}</h2>

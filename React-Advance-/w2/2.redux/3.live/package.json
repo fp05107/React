@@ -1,0 +1,19 @@
+{
+  "name": "3.live",
+  "version": "1.0.0",
+  "description": "1. npm init -y\r 2. npm i redux\r 3. npm i nodemon -D\r 4. Update package.json, add",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

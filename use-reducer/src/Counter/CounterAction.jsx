@@ -6,4 +6,4 @@ export const IncByValAction = (value) =>{
         type:"INC_BY_VALUE",
         payload:value
     }
-}
+} 
